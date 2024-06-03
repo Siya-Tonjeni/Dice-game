@@ -248,3 +248,36 @@ footer {
 .bottom {
     padding-top: 30px;
 }
+
+p {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+/* Styles for a dice element */
+.dice {
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+}
+  
+  /* 
+  Styles for heading level 1 
+  */
+h1 {
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 30px;
+    text-shadow: 5px 0 #232931;
+    font-size: 3.5rem;
+    color: #000;
+    text-align: center;
+}
+
+.dice-img {
+    width: 180px;
+    height: auto;
+    border: #4ecca3 solid 5px;
+    background-color: #4ecca3;
+    border-radius: 30px;
+}
