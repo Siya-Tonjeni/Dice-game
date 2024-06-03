@@ -265,6 +265,7 @@ p {
   Styles for heading level 1 
   */
 h1 {
+    font-family: "Press Start 2P", system-ui;
     font-weight: 800;
     letter-spacing: 1px;
     margin: 30px;
