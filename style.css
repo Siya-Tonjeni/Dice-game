@@ -126,4 +126,16 @@ body {
     
 }
 
+/* Styles for the Game Rules Container */
+.gamerules {
+    margin-top: -40px;
+}
 
+#header {
+    font-weight: 800;
+    margin: 30px;
+    text-shadow: 5px 0 #232931;
+    font-size: 3rem;
+    color: #232931;
+    text-align: center;
+}
