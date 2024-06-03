@@ -133,7 +133,7 @@ body {
 }
 
 .gamerules {
-    margin-top: -40px;
+    margin-top: 40px;
 }
 
 #header {
@@ -205,9 +205,9 @@ body {
     color: rgb(255, 255, 255);
     font-size: 22px;
   }
-  
-  /* Styles for an element with the id "index-btn" on hover */
-  #index-btn:hover {
+
+  /* Styles for an element with the id "index-btn" */
+#index-btn {
     font-size: 20px;
     background-color: #4ecca3;
     border-radius: 30px;
@@ -217,10 +217,10 @@ body {
     text-decoration: none;
     font-weight: bold;
     margin: 5px;
-  }
+}
   
-/* Styles for an element with the id "index-btn" */
-#index-btn {
+/* Styles for an element with the id "index-btn" on hover */
+#index-btn:hover {
     font-size: 20px;
     background-color: #4ecca3;
     border-radius: 30px;
@@ -258,7 +258,7 @@ p {
 .dice {
     text-align: center;
     display: inline-block;
-    margin: 10px;
+    margin: 10px 150px;
 }
   
   /* 
@@ -341,7 +341,7 @@ h1 {
     background-color: #4ecca3;
     border-radius: 30px;
     color: #000000;
-    padding: 30px;
+    padding: 20px;
     margin-left: 250px;
     margin-right: 250px;
     margin-top: 35px;
