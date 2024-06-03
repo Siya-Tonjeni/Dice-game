@@ -30,8 +30,47 @@
           
     </div>
 
-    <!-- The main page of the game -->
-    <h1>Main page</h1>
+    <!-- Background for page -->
+    <div class="main__bg">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <!-- Game rules section -->
+    <div class="container gamerules">
+        <!-- Heading for the welcome message -->
+        <h1 id="header">Dice Games Rules</h1>
+        <!-- Container for game rules -->
+        <div class="dicegame-rules">
+          <p class="game-rules">
+            1. Click the "Edit Names" button to change the names.
+          </p>
+          <p class="game-rules">
+            2. Click the "Roll Dice" button to roll the dice.
+          </p>
+          <p class="game-rules">
+            3. If both players roll the same number, it's a draw or tie.
+          </p>
+          <p class="game-rules">
+            4. The player with the highest dice number wins.
+          </p>
+          <p class="game-rules">
+            5. Click the "Reset" button to start the game over and reset scores.
+          </p>
+        </div>
+    </div>
+
+    <div class="container bottom">
+        <!-- Button to play the dice game -->
+
+        <button type="button" id="index-btn">
+          <a href="dicegame.html" id="index-text">LET'S PLAY</a>
+        </button>
+    </div>
     
 
     <script src="script.js"></script>
