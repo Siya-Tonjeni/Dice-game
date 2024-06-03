@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+
+    <title>Dice-Game</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="main__bg">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <section class="main-section">
+        <div class="container">
+          <!-- Heading for the game -->
+          <h1>Let's Play</h1>
+  
+          <!-- Dice element for Player 1 -->
+          <div class="dice">
+            <p class="Player1">Player 1</p>
+            <img class="dice-img" src="images/dice6.png" />
+          </div>
+  
+          <!-- Dice element for Player 2 -->
+          <div class="dice">
+            <p class="Player2">Player 2</p>
+            <img class="dice-img" src="images/dice6.png" />
+          </div>
+        </div>
+      </section>
+  
+      <!-- Section for buttons -->
+      <section class="btn-section">
+        <div class="container bottom">
+          <!-- Button to roll the dice -->
+          <button type="button" class="butn">
+            Roll the Dice
+          </button>
+        </div>
+        <div class="container bottom">
+          <!-- Button to edit player names -->
+          <button type="button" id="btn-text">
+            EDIT PLAYER NAMES
+          </button>
+          <!-- Button to start the game or refresh -->
+          <button type="button" id="btn-text">
+            RESTART
+          </button>
+        </div>
+      </section>
+  
+      <!-- Section for the leaderboard -->
+      <section id="Leaderboard-Section">
+        <h2 id="leaderboard-h2">Leaderboard</h2>
+        <div class="leaderboard"></div>
+      </section>
+  
+      <!-- Footer section -->
+      <footer>
+        <!-- Heading for the footer -->
+        <h2 class="footer-h1">
+          🎲 Dice Game By Siya Mthonjeni & Mbali Puso 🎲
+        </h2>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
