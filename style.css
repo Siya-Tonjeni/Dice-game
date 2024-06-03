@@ -281,3 +281,47 @@ h1 {
     background-color: #4ecca3;
     border-radius: 30px;
 }
+
+  /* Styles for a button class */
+  .butn {
+    background: #000000;
+    border-radius: 30px;
+    border: #4ecca3 solid 4px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding: 16px 25px 16px 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.butn:hover {
+    background: #4ecca3;
+    padding: 16px 35px 16px 35px;
+    text-decoration: none;
+    border: #4ecca3 solid 4px;
+}
+
+/* Styles for an element with the id "btn-text" */
+#btn-text {
+    font-size: 20px;
+    background-color: #4ecca3;
+    border-radius: 30px;
+    border: #000000 solid 4px;
+    color: rgb(0, 0, 0);
+    padding: 16px 25px 16px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+  }
+  
+  /* Styles for an element with the id "btn-text" on hover */
+  #btn-text:hover {
+    font-size: 20px;
+    background-color: #000000;
+    border-radius: 30px;
+    border: #000000 solid 4px;
+    color: rgb(255, 255, 255);
+    padding: 16px 25px 16px 25px;
+    text-decoration: none;
+    font-weight: bold;
+  }
