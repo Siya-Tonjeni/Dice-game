@@ -18,7 +18,9 @@
 </head>
 
 <body>
-    <div class="main__bg">
+
+    <section class="main-section">
+      <div class="main__bg">
         <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div>
@@ -26,59 +28,63 @@
         <div class="circle"></div>
         <div class="circle"></div>
     </div>
-
-    <section class="main-section">
         <div class="container">
           <!-- Heading for the game -->
           <h1>Let's Play</h1>
   
           <!-- Dice element for Player 1 -->
           <div class="dice">
+            <div class="player-name-container">
             <p class="Player1">Player 1</p>
+            <input type="text" class="player-name hidden" value="Player 1"> 
+          </div>
             <img class="dice-img dice-player-one" src="images/dice6.png" />
           </div>
   
           <!-- Dice element for Player 2 -->
           <div class="dice">
-            <p class="Player2">Player 2</p>
+            <div class="player-name-container">
+              <p class="Player2">Player 2</p>
+              <input type="text" class="player-name hidden" value="Player 2"> 
+            </div> 
             <img class="dice-img dice-player-two" src="images/dice6.png" />
           </div>
         </div>
-      </section>
-  
-      <!-- Section for buttons -->
-      <section class="btn-section">
+
+         <!-- Section for buttons -->
+      <div class="btn-section">
         <div class="container bottom">
           <!-- Button to roll the dice -->
           <button type="button" class="butn" onclick="rollDice()">
             Roll the Dice
           </button>
         </div>
-        <div class="container bottom">
+        <div class="container bottom edit-btn">
           <!-- Button to edit player names -->
           <button type="button" id="btn-text">
             EDIT PLAYER NAMES
           </button>
           <!-- Button to start the game or refresh -->
-          <button type="button" id="btn-text">
+          <button type="button" id="restart-btn">
             RESTART
-          </button>
+          </button
         </div>
-      </section>
-  
-      <!-- Section for the leaderboard -->
-      <section id="Leaderboard-Section">
+      </div>
+
+       <!-- Section for the leaderboard -->
+       <div id="Leaderboard-Section">
         <h2 id="leaderboard-h2">Leaderboard</h2>
-        <div class="leaderboard"></div>
-      </section>
-  
-      <!-- Footer section -->
+        <div class="leaderboard"></div>     
+       </div>
+
+            <!-- Footer section -->
       <footer>
         <!-- Heading for the footer -->
         <h2 class="footer-h1">
           🎲 Dice Game By Siya Tonjeni & Mbali Puso 🎲
         </h2>
       </footer>
+      </section>
 
     <script src="script.js"></script>
 </body>
