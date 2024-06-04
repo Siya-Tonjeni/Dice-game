@@ -4,12 +4,7 @@ body {
     font-family: "Audiowide", sans-serif;
 }
 
-.container {
-    width: 70%;
-    margin: auto;
-    text-align: center;
-}
-
+/* Background throughout the program */
 .main__bg {
     position: fixed;
     top: 0;
@@ -82,15 +77,19 @@ body {
     }
 }
 
+/* Background ends */
+
+/* Splash page */
 .splash{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: url(images/background-img.png) repeat;
+    /* background: url(images/background-img.png) repeat; */
+    background: #fff9e0;
     z-index: 200;
-    color: #fff;
+    color: #232931;
     text-align: center;
     line-height: 40vh;
 }
@@ -102,9 +101,10 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: url(images/background-img.png) repeat;
+    /* background: url(images/background-img.png) repeat; */
+    background: #fff9e0;
     z-index: -10;
-    color: #fff;
+    color: #232931;
     text-align: center;
     line-height: 40vh;
 }
@@ -119,6 +119,7 @@ body {
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
     font-family: "Press Start 2P", system-ui;
+    text-shadow: 5px 0 #fff;
     font-size: 80px;
     font-weight: 600;
 }
@@ -130,6 +131,84 @@ body {
     width: 450px;
     height: 450px;
     
+}
+
+/* Loader styling */
+.dots-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 20%;
+  opacity: 0;
+  animation: appearIn 4s ease-in forwards;
+}
+@keyframes appearIn{
+  to{
+      opacity: 1;
+  }
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #000;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.dot:last-child {
+  margin-right: 0;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.3s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.1s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    background-color: #000;
+    box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: #232931;
+    box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
+  }
+
+  100% {
+    transform: scale(0.8);
+    background-color: #000;
+    box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+  }
+}
+
+/* Splash page ends */
+
+/* Game rules section  */
+
+.welcome-section{
+  position: fixed;
+}
+
+.container {
+  /* width: 70%; */
+  position: relative;
+  left: 30%;
+  margin: auto;
+  text-align: center;
 }
 
 .gamerules {
@@ -180,7 +259,7 @@ body {
 }
 
 /* Responsive design for screen with 768px max width */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .dicegame-rules {
       padding: 20px;
     }
@@ -190,7 +269,7 @@ body {
     }
   }
   
-  /* For screens with a maximum width of 480px */
+  /* For screens with a maximum width of 480px 
   @media (max-width: 480px) {
     .dicegame-rules {
       padding: 10px;
@@ -199,51 +278,52 @@ body {
     .game-rules {
       font-size: 18px;
     }
-}
-
-#index-text {
-    color: rgb(255, 255, 255);
-    font-size: 22px;
-  }
+} */
 
   /* Styles for an element with the id "index-btn" */
-#index-btn {
+#index-btn{
     font-size: 20px;
     background-color: #4ecca3;
     border-radius: 30px;
     border: #4ecca3 solid 4px;
     color: rgb(255, 255, 255);
     padding: 16px 25px 16px 25px;
-    text-decoration: none;
     font-weight: bold;
     margin: 5px;
+    cursor: pointer;
 }
   
 /* Styles for an element with the id "index-btn" on hover */
 #index-btn:hover {
     font-size: 20px;
-    background-color: #4ecca3;
+    background-color: #a7eed6;
     border-radius: 30px;
-    border: #4ecca3 solid 4px;
-    color: rgb(255, 255, 255);
+    border: #a7eed6 solid 4px;
+    color:#232931;
     padding: 16px 25px 16px 25px;
-    text-decoration: none;
     font-weight: bold;
     margin: 5px;
+    cursor: pointer;
 }
 
 .footer-h1 {
     font-weight: 300;
-    margin: 30px;
+    /* margin: 30px; */
     font-size: 1.3rem;
     color: #232931;
     text-align: center;
 }
 
 footer {
-    margin-top: 100px;
-    margin-bottom: 20px;
+    /* margin-top: 100px;
+    margin-bottom: 20px; */
+    width: 500px;
+    margin: 10px 10px 0 47%;
 }
+
+/* Game rule section ends */
+
+/* Dice game (dicegame.html file) section */
 
 .bottom {
     padding-top: 30px;

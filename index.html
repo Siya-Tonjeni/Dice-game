@@ -17,17 +17,25 @@
     <!-- The splash page -->
 
     <div class="splash">
+        <div class="main__bg">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
         <h2 class="fade-in">Dice Game</h2>
-        <img class="logo-img" src="images/logo.png" alt="game-logo">
-        <div class="dots-container">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-        
-          
+          <img class="logo-img fade-in" src="images/logo.png" alt="game-logo">
+    </div> 
+    <!-- Loader  -->
+    <div class="dots-loader appearIn">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+  </div>  
+         
     </div>
 
     <section class="welcome-section">
@@ -67,19 +75,19 @@
 
     <div class="container bottom">
         <!-- Button to play the dice game -->
-
-        <button type="button" id="index-btn">
-          <a href="dicegame.html" id="index-text">LET'S PLAY</a>
-        </button>
+        <a href="dicegame.html">
+          <button id="index-btn">LET'S PLAY</button>
+        </a>
     </div>
+    <footer>
+      <!-- Heading for the footer -->
+      <h2 class="footer-h1">
+        🎲 Dice Game By Siya Tonjeni & Mbali Puso 🎲
+      </h2>
+  </footer>
     </section>
     
-    <footer>
-        <!-- Heading for the footer -->
-        <h2 class="footer-h1">
-          🎲 Dice Game By Siya Tonjeni & Mbali Puso 🎲
-        </h2>
-    </footer>
+   
 
     <script src="script.js"></script>
 </body>
