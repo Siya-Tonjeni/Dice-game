@@ -76,6 +76,8 @@ function restartGame() {
   playerInputs[0].value = 'Player 1'; 
   playerInputs[1].value = 'Player 2';
   document.querySelector('h1').textContent = "Let's Play"; 
+  document.querySelector('.Player1').textContent = "Player 1";
+  document.querySelector('.Player2').textContent = "Player 2";
 
   //Set edit player button to default
   editPlayerButton.textContent = 'EDIT PLAYER NAMES';
