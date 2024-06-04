@@ -1,3 +1,87 @@
+body {
+    background-color: #fff9e0;
+    margin: 0;
+    font-family: "Audiowide", sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.main__bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    z-index: -1;
+}
+
+.circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(78, 204, 163, 0.5);
+    border-radius: 50%;
+    animation: float 4s ease-in-out infinite;
+    z-index: -1;
+}
+
+.circle:nth-child(1) {
+    top: 5%;
+    left: 7%;
+    background: #a1c45a;
+    animation-duration: 6s;
+}
+
+.circle:nth-child(2) {
+    top: 50%;
+    left: 5%;
+    background: #ea4c4c;
+    animation-duration: 6s;
+}
+
+.circle:nth-child(3) {
+    top: 60%;
+    left: 50%;
+    background: #ea4c4c;
+    animation-duration: 7s;
+}
+
+.circle:nth-child(4) {
+    top: 80%;
+    left: 75%;
+    background: #a1c45a;
+    animation-duration: 8s;
+}
+
+.circle:nth-child(5) {
+    top: 20%;
+    left: 75%;
+    animation-duration: 9s;
+}
+
+.circle:nth-child(6) {
+    top: 80%;
+    left: 25%;
+    animation-duration: 10s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.1);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
 .splash{
     position: fixed;
     top: 0;
@@ -47,3 +131,287 @@
     height: 450px;
     
 }
+
+.gamerules {
+    margin-top: 40px;
+}
+
+#header {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 800;
+    margin: 30px;
+    text-shadow: 5px 0 #fff;
+    font-size: 3rem;
+    color: #232931;
+    text-align: center;
+}
+
+.game-rules {
+    font-weight: 200;
+    font-size: 1.25rem;
+    padding: -15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.dicegame-rules {
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: #FFDE59;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.game-rules {
+    border-radius: 25px;
+    margin: 10px;
+    background-color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 10px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: -0.1px;
+    color: #000000;
+}
+
+/* Responsive design for screen with 768px max width */
+@media (max-width: 768px) {
+    .dicegame-rules {
+      padding: 20px;
+    }
+    
+    .game-rules {
+      font-size: 20px;
+    }
+  }
+  
+  /* For screens with a maximum width of 480px */
+  @media (max-width: 480px) {
+    .dicegame-rules {
+      padding: 10px;
+    }
+    
+    .game-rules {
+      font-size: 18px;
+    }
+}
+
+#index-text {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+  }
+
+  /* Styles for an element with the id "index-btn" */
+#index-btn {
+    font-size: 20px;
+    background-color: #4ecca3;
+    border-radius: 30px;
+    border: #4ecca3 solid 4px;
+    color: rgb(255, 255, 255);
+    padding: 16px 25px 16px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+  
+/* Styles for an element with the id "index-btn" on hover */
+#index-btn:hover {
+    font-size: 20px;
+    background-color: #4ecca3;
+    border-radius: 30px;
+    border: #4ecca3 solid 4px;
+    color: rgb(255, 255, 255);
+    padding: 16px 25px 16px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.footer-h1 {
+    font-weight: 300;
+    margin: 30px;
+    font-size: 1.3rem;
+    color: #232931;
+    text-align: center;
+}
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.bottom {
+    padding-top: 30px;
+}
+
+p {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+/* Styles for a dice element */
+.dice {
+    text-align: center;
+    display: inline-block;
+    margin: 10px 150px;
+}
+  
+  /* 
+  Styles for heading level 1 
+  */
+h1 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 30px;
+    text-shadow: 5px 0 #232931;
+    font-size: 3.5rem;
+    color: #000;
+    text-align: center;
+}
+
+.dice-img {
+    width: 180px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.dice-player-one {
+    border: #4ecca3 solid 5px;
+    background-color: #4ecca3;
+}
+
+.dice-player-two {
+    border: #ea4c4c solid 5px;
+    background-color: #ea4c4c;
+}
+
+  /* Styles for a button class */
+  .butn {
+    background: #000000;
+    border-radius: 30px;
+    border: #4ecca3 solid 4px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding: 16px 25px 16px 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.butn:hover {
+    background: #4ecca3;
+    padding: 16px 35px 16px 35px;
+    text-decoration: none;
+    border: #4ecca3 solid 4px;
+}
+
+/* Styles for an element with the id "btn-text" */
+#btn-text {
+    font-size: 20px;
+    background-color: #4ecca3;
+    border-radius: 30px;
+    border: #000000 solid 4px;
+    color: rgb(0, 0, 0);
+    padding: 16px 25px 16px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+  }
+  
+  /* Styles for an element with the id "btn-text" on hover */
+  #btn-text:hover {
+    font-size: 20px;
+    background-color: #000000;
+    border-radius: 30px;
+    border: #000000 solid 4px;
+    color: rgb(255, 255, 255);
+    padding: 16px 25px 16px 25px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* Styles for the Leaderboard Section */
+#Leaderboard-Section {
+    font-size: 20px;
+    background-color: #4ecca3;
+    border-radius: 30px;
+    color: #000000;
+    padding: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 35px;
+  }
+  
+  /* Styles for the Leaderboard Heading */
+  #leaderboard-h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 38px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 30px;
+    background-color: #ffffff;
+  }
+  
+  /* Styles for the Leaderboard Paragraph */
+  .leaderboard-p {
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  /* Styles for the Leaderboard Div */
+  #leaderboard-div {
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  /* For screens with a maximum width of 768px */
+  @media (max-width: 768px) {
+    #Leaderboard-Section {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    
+    #leaderboard-h2 {
+      font-size: 28px;
+    }
+    
+    .leaderboard-p {
+      font-size: 24px;
+    }
+    
+    #leaderboard-div {
+      padding: 10px;
+    }
+  }
+  
+  /* For screens with a maximum width of 480px */
+  @media (max-width: 480px) {
+    #Leaderboard-Section {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    
+    #leaderboard-h2 {
+      font-size: 24px;
+    }
+    
+    .leaderboard-p {
+      font-size: 20px;
+    }
+    
+    #leaderboard-div {
+      padding: 5px;
+    }
+  }
