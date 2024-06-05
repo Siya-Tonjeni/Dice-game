@@ -1,4 +1,4 @@
-// Splash page to dissapear and appear main page
+// Splash page to disappear and appear main page
 const splash = document.querySelector('.splash');
 
 document.addEventListener('DOMContentLoaded', (e)=>{
@@ -68,7 +68,7 @@ function rollDice() {
 
     // Display the alert every 3rd round
   if (roundNumber % 3 === 0) {
-    alert("Leader Broad Results:" + "\n" + player1 + ": " + rollDice.player1Score + 
+    alert("Leader Board Results:" + "\n" + player1 + ": " + rollDice.player1Score + 
     "\n" + player2 + ": " + rollDice.player2Score);
   }
 
