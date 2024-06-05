@@ -7,39 +7,25 @@ document.addEventListener('DOMContentLoaded', (e)=>{
     }, 6000);
 });
 
+
  //Editing players names
- const editPlayerButton = document.getElementById('btn-text');
+const editButton = document.getElementById('btn-text');
 
- const playerInputs = document.querySelectorAll('.player-name');
- const playerNameContainers = document.querySelectorAll('.player-name-container');
- 
- function editPlayer() {
-   playerNameContainers.forEach(container => {
-     const playerName = container.querySelector('p');
-     const input = container.querySelector('input');
- 
-     playerName.classList.toggle('hidden');
-     input.classList.toggle('hidden');
-   });
- 
-   // Change button text
-   if (editPlayerButton.textContent === 'EDIT PLAYER NAMES') {
-     editPlayerButton.textContent = 'SAVE NAMES';
-   } else {
-     editPlayerButton.textContent = 'EDIT PLAYER NAMES';
- 
-     // Save player names
-     playerNameContainers.forEach(container => {
-       const playerName = container.querySelector('p');
-       const input = container.querySelector('input');
-       playerName.textContent = input.value;
-     });
-   }
- }
- 
- // Add click event listener to the edit button
- editPlayerButton.addEventListener('click', editPlayer);
+const playerNames = document.querySelectorAll('.Player1, .Player2');
 
+// Add click event listener to the edit button
+editButton.addEventListener('click', () => {
+  const player1Name = prompt("Enter new name for Player 1:");
+  const player2Name = prompt("Enter new name for Player 2:");
+
+  if (player1Name) {
+    playerNames[0].textContent = player1Name;
+  }
+
+  if (player2Name) {
+    playerNames[1].textContent = player2Name; 
+  }
+});
 
 // Roll the dice function
 function rollDice() {
@@ -52,8 +38,8 @@ function rollDice() {
     document.querySelector('.dice-player-two').src = 'images/dice' + player2Roll + '.png'; // e.g images/dice3.png
 
     // Determine the winner and update the h1 element
-    const player1 = playerInputs[0].value;;
-    const player2 = playerInputs[1].value;;
+    const player1 = playerNames[0].textContent;
+    const player2 = playerNames[1].textContent;
     var resultText = '';
     if (player1Roll > player2Roll) {
       resultText = player1 +' Wins';
@@ -73,8 +59,8 @@ function restartGame() {
   document.querySelector('.dice-player-two').src = 'images/dice6.png';
 
   // Set Default names
-  playerInputs[0].value = 'Player 1'; 
-  playerInputs[1].value = 'Player 2';
+  playerNames[0].value = 'Player 1'; 
+  playerNames[1].value = 'Player 2';
   document.querySelector('h1').textContent = "Let's Play"; 
   document.querySelector('.Player1').textContent = "Player 1";
   document.querySelector('.Player2').textContent = "Player 2";

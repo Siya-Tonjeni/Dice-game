@@ -456,7 +456,7 @@ h1 {
   /* Styles for the Leaderboard Div */
   #leaderboard-div {
     border-radius: 30px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     background-color: #ffffff;
     padding: 20px;
   }
