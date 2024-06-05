@@ -198,15 +198,8 @@ body {
 /* Splash page ends */
 
 /* Game rules section  */
-
-.welcome-section{
-  position: fixed;
-}
-
 .container {
-  /* width: 70%; */
-  position: relative;
-  left: 30%;
+  width: 70%;
   margin: auto;
   text-align: center;
 }
@@ -259,7 +252,7 @@ body {
 }
 
 /* Responsive design for screen with 768px max width */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .dicegame-rules {
       padding: 20px;
     }
@@ -308,28 +301,20 @@ body {
 
 .footer-h1 {
     font-weight: 300;
-    /* margin: 30px; */
+    margin: 30px; 
     font-size: 1.3rem;
     color: #232931;
     text-align: center;
 }
 
 footer {
-    /* margin-top: 100px;
-    margin-bottom: 20px; */
-    width: 500px;
-    margin: 10px 10px 0 47%;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 /* Game rule section ends */
 
 /* Dice game (dicegame.html file) section */
-
-.main-section{
-  position: fixed;
-  left: -8%;
-}
-
 .bottom {
     padding-top: 30px;
 }
