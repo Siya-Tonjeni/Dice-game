@@ -36,7 +36,6 @@
           <div class="dice">
             <div class="player-name-container">
             <p class="Player1">Player 1</p>
-            <input type="text" class="player-name hidden" value="Player 1"> 
           </div>
             <img class="dice-img dice-player-one" src="images/dice6.png" />
           </div>
@@ -45,7 +44,6 @@
           <div class="dice">
             <div class="player-name-container">
               <p class="Player2">Player 2</p>
-              <input type="text" class="player-name hidden" value="Player 2"> 
             </div> 
             <img class="dice-img dice-player-two" src="images/dice6.png" />
           </div>
@@ -61,11 +59,11 @@
         </div>
         <div class="container bottom edit-btn">
           <!-- Button to edit player names -->
-          <button type="button" id="btn-text">
+          <button type="button" id="btn-text" onclick="editPlayer()">
             EDIT PLAYER NAMES
           </button>
           <!-- Button to start the game or refresh -->
-          <button type="button" id="restart-btn">
+          <button type="button" id="restart-btn" onclick="restartGame()">
             RESTART
           </button
         </div>
