@@ -29,6 +29,9 @@ editButton.addEventListener('click', () => {
 
 // Roll the dice function
 function rollDice() {
+    //Tracking number of rounds
+    let roundNumber = rollDice.roundNumber || 1;
+
     // Generate random numbers between 1 and 6 for both players
     var player1Roll = Math.floor(Math.random() * 6) + 1;
     var player2Roll = Math.floor(Math.random() * 6) + 1;
@@ -37,9 +40,21 @@ function rollDice() {
     document.querySelector('.dice-player-one').src = 'images/dice' + player1Roll + '.png'; // Concatenating the source of the image to replace with
     document.querySelector('.dice-player-two').src = 'images/dice' + player2Roll + '.png'; // e.g images/dice3.png
 
-    // Determine the winner and update the h1 element
     const player1 = playerNames[0].textContent;
     const player2 = playerNames[1].textContent;
+
+    // Tracking player scores
+    rollDice.player1Score = rollDice.player1Score || 0;
+    rollDice.player2Score = rollDice.player2Score || 0;
+
+     // Determine the winner and update scores
+  if (player1Roll > player2Roll) {
+    rollDice.player1Score++;
+  } else if (player2Roll > player1Roll) {
+    rollDice.player2Score++;
+  }
+
+    // Determine the winner and update the h1 element
     var resultText = '';
     if (player1Roll > player2Roll) {
       resultText = player1 +' Wins';
@@ -50,6 +65,16 @@ function rollDice() {
     }
 
     document.querySelector('h1').textContent = resultText;
+
+    // Display the alert every 3rd round
+  if (roundNumber % 3 === 0) {
+    alert("Leader Broad Results:" + "\n" + player1 + ": " + rollDice.player1Score + 
+    "\n" + player2 + ": " + rollDice.player2Score);
+  }
+
+  // Add on to scores already written
+  roundNumber++;
+  rollDice.roundNumber = roundNumber;
   }
 
  // Restart Function button 
@@ -64,6 +89,11 @@ function restartGame() {
   document.querySelector('h1').textContent = "Let's Play"; 
   document.querySelector('.Player1').textContent = "Player 1";
   document.querySelector('.Player2').textContent = "Player 2";
+
+  // Set to default scores 
+rollDice.roundNumber = 1;
+rollDice.player1Score = 0;
+rollDice.player2Score = 0;
 
   //Set edit player button to default
   editPlayerButton.textContent = 'EDIT PLAYER NAMES';
